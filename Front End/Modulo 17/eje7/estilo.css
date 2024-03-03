@@ -1,0 +1,25 @@
+body{
+    background-color:#a3faff;
+}
+
+h1{
+    font-size: 3cm;
+    font-family: arial, helvetica;
+    font-weight: normal;
+    color:#033DE7;
+    text-align: center;
+}
+h2{
+    font-size: 1.5cm;
+    font-family: Georgia, 'Times New Roman', Times, serif, helvetica;
+    font-weight: normal;
+    color:#029e1cee;
+    text-align: center;
+}
+p{
+    font-size: 0.8cm;
+    font-family: 'Courier New', Courier, monospace helvetica;
+    font-weight: normal;
+    color:#4a0038;
+    text-align: left;
+}

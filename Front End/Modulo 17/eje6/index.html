@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h2><strong>Registrar un Usuario</strong></h2>
+    <form action="" method="POST" enctype="text/plain">
+        <label for="nombre usuario">Nombre del Usuario</label><br>
+        <input type="text" name="nombre usuario">
+        <br>
+
+        <label for="contrasenia">Contraseña</label><br>
+        <input type="password" name="contrasenia">
+        <br>
+
+        <label for="edad usuario">Edad del usuario</label><br>
+        <input type="number" name="edad usuario">
+        <br>
+
+        <label for="fecha nacimiento">Fecha de Nacimiento</label><br>
+        <input type="date" name="fecha nacimiento">
+        <br>
+
+        <label for="sexo usuario">Sexo del usuario</label><br>
+        <input type="radio" name="sexo usuario" id="hombre" value="1">  
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" name="sexo usuario" id="mujer" value="2">  
+        <label for="mujer">Mujer</label><br>
+        <input type="radio" name="sexo usuario" id="otro" value="3"> 
+        <label for="otro">Prefiero no decir</label> <br>
+        
+
+        <label for="pais usuario">País nacimiento del usuario</label><br>
+        <select name="pais usuario">
+            <option>Argentina</option>
+            <option>Brazil</option>
+            <option>Chile</option>
+            <option>Paraguay</option>
+            <option>Uruguay</option>
+        </select>
+        <br>
+        <button type="submit">Enviar</button> <button type="reset">Borrar</button>
+
+
+
+    </form>
+
+
+    <!-- script de javascript hecho por chatgpt -->
+    <script>
+        function enviarFormulario() {
+            // Aquí puedes agregar el código para enviar el formulario si lo deseas.
+            // Por ejemplo, podrías usar AJAX para enviar los datos al servidor.
+
+            // En este ejemplo, simplemente mostramos una alerta con los datos del formulario.
+            const nombreUsuario = document.getElementById("nombre_usuario").value;
+            const contrasenia = document.getElementById("contrasenia").value;
+
+            alert("Nombre de usuario: " + nombreUsuario + "\nContraseña: " + contrasenia);
+        }
+
+        // Capturar el evento "Enter" en los campos de texto y mover el foco al siguiente campo.
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                const formInputs = document.querySelectorAll("input:not([type='submit']):not([type='reset'])");
+                const currentInput = document.activeElement;
+
+                // Obtener el índice del campo de entrada actual en la lista de campos de entrada.
+                const currentIndex = Array.from(formInputs).indexOf(currentInput);
+
+                // Mover el foco al siguiente campo, si es posible.
+                if (currentIndex > -1 && currentIndex < formInputs.length - 1) {
+                    event.preventDefault(); // Evitar que el formulario se envíe al presionar "Enter".
+                    formInputs[currentIndex + 1].focus();
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

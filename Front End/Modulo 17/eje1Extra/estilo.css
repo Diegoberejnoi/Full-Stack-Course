@@ -1,0 +1,16 @@
+ul.custom-list {
+    list-style-type: none; /* Quita las viñetas predeterminadas */
+    padding-left: 0; /* Elimina el relleno izquierdo para evitar espacios en blanco */
+    margin-left:20px;
+    margin-top:50px;
+}
+
+ul.custom-list li:before {
+    content: url(imagenes/ave2.png); /* Puedes usar cualquier contenido deseado, como símbolos o texto */
+    margin-right: 5px; /* Añade un margen a la derecha del contenido */
+    
+}
+
+.container-custom{
+    background-color: rgb(127, 182, 253);
+}

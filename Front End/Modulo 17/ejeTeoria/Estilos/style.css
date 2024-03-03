@@ -1,0 +1,16 @@
+* {
+    background-color:aliceblue;
+    font-family: "Old English Text MT", cursive;
+    font-size:36px
+    }
+
+    h1 {
+        font-size:50px;
+        color:#1b5366;
+    }
+
+    section{
+        display:inline-flex;
+        justify-content: space-around;
+        align-items:start;
+    }

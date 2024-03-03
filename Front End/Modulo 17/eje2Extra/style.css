@@ -1,0 +1,53 @@
+/*Alinear el texto de las celdas, cabeceras y título. Definir los bordes de la tabla, celdas y
+cabeceras (color gris oscuro #333).*/
+
+.tabla{
+text-align: center;
+border-style: solid;
+border-color: #333;
+border-collapse: collapse;
+}
+td, th{
+padding:5px;
+}
+/*
+Formatear las cabeceras de fila y columna con la imagen de fondo correspondiente en
+cada caso (fondo_gris.gif, euro.png, dolar.png, yen.png, libra.png). Modificar el tipo de
+letra de la tabla y utilizar Arial. El color azul claro es #E6F3FF.*/
+
+
+
+.titulos{
+background-image: url(imagenes/fondo_gris.gif);
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+tr:nth-child(even){
+    background-color: #ffffcc;
+}
+
+.nombre-fila{
+    background-color: #E6F3FF;
+    text-align: left;
+}
+
+#euro{
+    background-image: url(imagenes/euro.png);
+   
+}
+#dolar{
+    background-image: url(imagenes/dolar.png);  
+}
+#libra{
+    background-image: url(imagenes/libra.png);
+}
+#yen{
+    background-image: url(imagenes/yen.png);
+   
+}
+#euro, #dolar, #libra, #yen{
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}

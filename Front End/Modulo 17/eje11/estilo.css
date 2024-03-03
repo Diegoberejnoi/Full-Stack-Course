@@ -1,0 +1,30 @@
+.btn-custom {
+        background-color: #8a2be2;
+        color: white; 
+    }
+
+
+    .btn-custom1 {
+        background-color: #0dd6e4ba;
+        color: white; 
+    }
+
+    .btn-custom2 {
+        background-color: #045716;
+        color: white; 
+    }
+
+    .btn-custom3 {
+        background-color: #b56a0eea;
+        color: white; 
+    }
+
+    .btn-custom4 {
+        background-color: #0c0889;
+        color: white; 
+    }
+
+.btn:hover{
+    background-color: blue;
+    color:white
+}
