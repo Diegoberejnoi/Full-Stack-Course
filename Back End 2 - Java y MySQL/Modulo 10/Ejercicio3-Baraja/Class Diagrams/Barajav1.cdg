@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Barajav1">
+  <ClassDiagramComponents>
+    <Class name="Baraja" package="" visibility="public" xPosition="267.0" yPosition="23.0">
+      <Fields>
+        <Field name="baraja" type="ArrayList&lt;Carta&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Carta" package="" visibility="public" xPosition="391.0" yPosition="190.0">
+      <Fields>
+        <Field name="valor" type="Integer" visibility="private"/>
+        <Field name="palo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Juego" package="" visibility="public" xPosition="18.0" yPosition="125.0">
+      <Fields>
+        <Field name="mazo" type="Baraja" visibility="private"/>
+        <Field name="monton" type="Baraja" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Juego-Baraja" source="Juego" target="Baraja" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Baraja-Carta" source="Baraja" target="Carta" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
