@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="l">
+  <ClassDiagramComponents>
+    <Class name="UntitledClass" package="" visibility="public" xPosition="58.0" yPosition="52.0">
+      <Fields>
+        <Field name="numero" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="suma" returnType="void" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UntitledClass1" package="" visibility="public" xPosition="421.0" yPosition="81.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="relacion" source="UntitledClass" target="UntitledClass1" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="recursiva" source="UntitledClass" target="UntitledClass" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

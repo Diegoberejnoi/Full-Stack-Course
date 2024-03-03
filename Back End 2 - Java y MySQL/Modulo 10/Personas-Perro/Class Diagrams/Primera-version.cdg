@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Primera-version">
+  <ClassDiagramComponents>
+    <Class name="Persona" package="" visibility="public" xPosition="27.0" yPosition="78.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="edad" type="Interger" visibility="private"/>
+        <Field name="dni" type="Interger" visibility="private"/>
+        <Field name="mascota" type="Perro" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Perro" package="" visibility="public" xPosition="310.0" yPosition="56.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="raza" type="String" visibility="private"/>
+        <Field name="edad" type="Interger" visibility="private"/>
+        <Field name="tamanio" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+        <Method name="untitledMethod1" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="mascota" source="Persona" target="Perro" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
