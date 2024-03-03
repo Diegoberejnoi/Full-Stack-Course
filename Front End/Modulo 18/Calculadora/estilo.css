@@ -1,0 +1,38 @@
+.btn{
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    background-color: rgb(187, 184, 184);
+    border-color: black;
+    border-radius: 0%;
+}
+
+.btn.number{
+    background-color: rgb(211, 211, 211);
+}
+.btn.equals{
+    background-color: rgb(122, 241, 252);
+}
+.btn.number.izSup{
+    border-radius: 10px 0 0 0;
+}
+.btn.derSup{
+    border-radius: 0 10px 0 0;
+}
+.btn.number.izInf{
+    border-radius: 0 0 0 10px;
+}
+.btn.derInf{
+    border-radius: 0 0 10px 0;
+}
+.resultado{
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    border-color: black;
+    width: 400px; /* Establece el ancho deseado */
+    margin: 0 auto; 
+    border: 1px solid black;
+}
+.conatiner{
+    padding: 20px;
+}

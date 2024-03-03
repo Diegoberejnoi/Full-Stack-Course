@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fondo negro en todo del explorador */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.neon-celeste-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #007acc; /* Color de fondo celeste */
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Transición de sombra y color de fondo */
+  }
+  
+  /* Pseudo-elemento ::before para el efecto de aura */
+  .neon-celeste-button::before,
+  .neon-celeste-button::after {
+    content: "";
+    position: absolute;
+    top: -10px; /* Ajusta el valor para cambiar la posición vertical del aura */
+    left: -10px; /* original era 20 40 Ajusta el valor para cambiar la posición horizontal del aura */
+    width: calc(100% + 20px); /* Ajusta el valor para cambiar el ancho del aura */
+    height: calc(100% + 20px); /* Ajusta el valor para cambiar la altura del aura */
+    background-color: #007acc;
+    filter: blur(20px);
+    opacity: 0.5;
+    animation: neon-glow 1.5s ease-in-out infinite;
+    z-index: -1;
+    transition: background-color 0.3s ease; /* Transición de color */
+  }
+  
+  /* Estilos al pasar el cursor por encima del botón */
+  .neon-celeste-button:hover {
+    box-shadow: 0 0 20px #007acc, 0 0 40px #007acc, 0 0 60px #007acc, 0 0 80px #007acc;
+  }
+  
+/* Estilos cuando se presiona el botón */
+.neon-celeste-button:active {
+    background-color: #ffd700; /* Cambiar el color de fondo del botón a dorado mientras se mantiene presionado */
+
+  }
+  
+  /* Estilos para cambiar el aura a dorado al mantener presionado */
+  .neon-celeste-button:active,
+  .neon-celeste-button:active::before,
+  .neon-celeste-button:active::after {
+    background-color: rgba(3, 3, 90, 0.269); /* Cambiar el color del aura a dorado mientras se mantiene presionado */
+  }
+  
+  /* Animación para el efecto de brillo */
+  @keyframes neon-glow {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
